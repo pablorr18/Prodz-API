@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 //PRIVATE KEY FOR API TOKENS
 app.set('private_key', config.secret);
 
-/*
+
 //Middleware: Verify API Token access
 app.use('/api', function(req,res,next){
 	var token = req.body.token || req.query.token || req.headers['x-access-token'];
@@ -52,7 +52,7 @@ app.use('/api', function(req,res,next){
 		});
 	}
 });
-*/
+
 
 //MAIN ROUTES
 require('./routes')(app);
